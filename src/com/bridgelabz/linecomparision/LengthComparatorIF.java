@@ -1,4 +1,4 @@
-package com.bridgelabz.LineComparision2;
+package com.bridgelabz.linecomparision;
 
 public interface LengthComparatorIF {
 	public void equalsMethod(Line line1, Line line2);

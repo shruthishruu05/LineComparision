@@ -1,4 +1,4 @@
-package com.bridgelabz.LineComparision2;
+package com.bridgelabz.linecomparision;
 
 public class LengthComparatorImplementation implements LengthComparatorIF
 {
