@@ -1,4 +1,4 @@
-package com.bridgelabz.LineComparision2;
+package com.bridgelabz.linecomparision;
 
 import java.util.Scanner;
 public class LineComparisionMain {
@@ -8,20 +8,20 @@ public class LineComparisionMain {
 		 Line line2 = new Line();
 	     System.out.println("Enter the coordinates of the line comparision");
 		 Scanner in = new Scanner(System.in);
-		 int x1Coordinate = in.nextInt();
-		 int y1Coordinate = in.nextInt();
-		 int x2Coordinate = in.nextInt();
-		 int y2Coordinate = in.nextInt();
-		 int x11Coordinate = in.nextInt();
-		 int y11Coordinate = in.nextInt();
-		 int x22Coordinate = in.nextInt();
-		 int y22Coordinate = in.nextInt();
+		 int x1Line1 = in.nextInt();
+		 int y1Line1 = in.nextInt();
+		 int x2Line1 = in.nextInt();
+		 int y2Line1 = in.nextInt();
+		 int x1Line2 = in.nextInt();
+		 int y1Line2 = in.nextInt();
+		 int x2Line2 = in.nextInt();
+		 int y2Line2 = in.nextInt();
 		 
 		 LengthComparatorIF lengthComparator = new LengthComparatorImplementation();
-		 line1.setPoint1(x1Coordinate,y1Coordinate);
-		 line1.setPoint2(x2Coordinate,y2Coordinate);
-		 line2.setPoint1(x11Coordinate,y11Coordinate);
-		 line2.setPoint2(x22Coordinate,y22Coordinate);
+		 line1.setStartCoordinate(x1Line1,y1Line1);
+		 line1.setEndCoordinate(x2Line1,y2Line1);
+		 line2.setStartCoordinate(x1Line2,y1Line2);
+		 line2.setEndCoordinate(x2Line2,y2Line2);
 		 lengthComparator.equalsMethod(line1, line2);
 		 lengthComparator.compareToMethod(line1, line2);
 		 
